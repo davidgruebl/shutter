@@ -1,0 +1,19 @@
+{
+  "name": "shutter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "snazzy",
+    "copy": "scp -r index.js package.json lib pi@192.168.1.6:~/shutter",
+    "start": "node --harmony_async_await index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "snazzy": "^5.0.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.4.6"
+  }
+}
