@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "snazzy",
-    "copy": "scp -r index.js package.json lib pi@192.168.1.6:~/shutter",
-    "start": "node --harmony_async_await index.js"
+    "copy": "scp -r index.js package.json up.js down.js lib pi@192.168.1.6:~/shutter",
+    "start": "node --harmony_async_await index.js",
+    "up": "node --harmony_async_await up.js",
+    "down": "node --harmony_async_await down.js"
   },
   "author": "",
   "license": "ISC",
